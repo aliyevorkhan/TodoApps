@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Yapılacaklar listesi</string>
+    <string name="delete">Sil</string>
+    <string name="example">Örnek</string>
+    <string name="cancel">İptal</string>
+    <string name="add">Ekle</string>
+    <string name="add_new_task">Lütfen yeni bir görev ekleyiniz</string>
+    <string name="want_to_do">Ne yapmak istersiniz?</string>
+</resources>

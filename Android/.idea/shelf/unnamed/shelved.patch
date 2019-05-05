@@ -1,0 +1,99 @@
+Index: app/src/main/res/layout/row.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    android:layout_width=\"match_parent\" android:layout_height=\"match_parent\">\n\n    <TextView\n        android:id=\"@+id/task_title\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:layout_alignParentLeft=\"true\"\n        android:layout_alignParentStart=\"true\"\n        android:text=\"Örnek\"\n        android:textSize=\"20sp\" />\n\n    <Button\n        android:id=\"@+id/btnDelete\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:layout_alignParentEnd=\"true\"\n        android:layout_alignParentRight=\"true\"\n        android:onClick=\"deleteTask\"\n        android:text=\"SİL\" />\n    \n</RelativeLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/row.xml	(revision d513be46318969bcc8f0e73619909ba16d47e811)
++++ app/src/main/res/layout/row.xml	(date 1526816109974)
+@@ -2,13 +2,14 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent" android:layout_height="match_parent">
+ 
++
+     <TextView
+         android:id="@+id/task_title"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true"
+-        android:text="Örnek"
++        android:text="@string/example"
+         android:textSize="20sp" />
+ 
+     <Button
+@@ -18,6 +19,6 @@
+         android:layout_alignParentEnd="true"
+         android:layout_alignParentRight="true"
+         android:onClick="deleteTask"
+-        android:text="SİL" />
++        android:text="@string/delete" />
+     
+ </RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/values/colors.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<resources>\n    <color name=\"colorPrimary\">#3F51B5</color>\n    <color name=\"colorPrimaryDark\">#303F9F</color>\n    <color name=\"colorAccent\">#FF4081</color>\n</resources>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/colors.xml	(revision d513be46318969bcc8f0e73619909ba16d47e811)
++++ app/src/main/res/values/colors.xml	(date 1526811852081)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+-    <color name="colorPrimary">#3F51B5</color>
+-    <color name="colorPrimaryDark">#303F9F</color>
+-    <color name="colorAccent">#FF4081</color>
++    <color name="colorPrimary">#000</color>
++    <color name="colorPrimaryDark">#000</color>
++    <color name="colorAccent">#000</color>
+ </resources>
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\n    <string name=\"app_name\">ToDoList</string>\n</resources>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/strings.xml	(revision d513be46318969bcc8f0e73619909ba16d47e811)
++++ app/src/main/res/values/strings.xml	(date 1526811660123)
+@@ -1,3 +1,5 @@
+ <resources>
+-    <string name="app_name">ToDoList</string>
++    <string name="app_name">To do list</string>
++    <string name="example">Example</string>
++    <string name="delete">Delete</string>
+ </resources>
+Index: app/src/main/res/values-tr-rTR/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values-tr-rTR/strings.xml	(date 1526811660095)
++++ app/src/main/res/values-tr-rTR/strings.xml	(date 1526811660095)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++    <string name="app_name">Yapılacaklar listesi</string>
++    <string name="example">Örnek</string>
++    <string name="delete">Sil</string>
++</resources>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(date 1526811545401)
++++ .idea/vcs.xml	(date 1526811545401)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
